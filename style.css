@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7)),
+    url(Images/Background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+header {
+  padding-left: 45px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+header div img {
+  width: 60px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+ul {
+  padding-top: 35px;
+  padding-right: 25px;
+}
+ul a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  position: relative;
+}
+ul a:hover {
+  color: #9751c5;
+}
+ul a::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #8338ec;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+ul a:hover::before {
+  width: 100%;
+}
+/* ------------------ End Header ----------------- */
+header + h2 {
+  position: relative;
+  top: 200px;
+  left: 50px;
+  color: white;
+  font-size: 41px;
+  width: 50%;
+}
+header + h2 span {
+  font-size: 51px;
+  position: relative;
+  top: -5px;
+  color: #8338ec;
+}
+/* ------------------ Main ----------------- */
+main {
+  height: 100vh;
+  margin-top: 100vh;
+  background-color: white;
+  width: 100%;
+}
+
+main #about-us {
+  display: flex;
+}
+main #about-us img {
+  height: 100vh;
+}
+main #about-us .intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-shadow: 2px 5px 15px black;
+}
+main #about-us .intro h2 {
+  color: #121212;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 36px;
+}
+main #about-us .intro p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.9;
+}
+.marked {
+  -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
+  animation: 1.5s highlight 1.5s 1 normal forwards;
+  background-color: none;
+  background: linear-gradient(90deg, #c57eff 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+
+@-webkit-keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+.fade-in.appear {
+  opacity: 1;
+}

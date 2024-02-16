@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PyZone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Images/icon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <header id="top">
+        <div>
+          <img src="Images/Logo.png" alt="Logo" />
+        </div>
+        <ul>
+          <a href="#top">Home</a>
+          <a href="#about-us">About Us</a>
+          <a href="#">Download</a>
+          <a href="#">Contact Us</a>
+        </ul>
+      </header>
+      <h2>Hi, I'm Ava! <br /><span class="auto-type"></span></h2>
+      <main>
+        <div id="about-us" class="fade-in">
+          <img src="Images/OIG1.jpg" alt="Ava's photo" class="fade-in" />
+          <div class="intro fade-in">
+            <div>
+              <h2>This is Ava!</h2>
+              <p>
+                Hello, everybody! my name is Ava as I mentioned before and I was
+                created to
+                <span class="marked"
+                  >help people who are interested in programming</span
+                >
+                - especially learning the fundamentals of programming in Python
+                - and I'm thrilled to be your guide on this exciting journey
+                into the world of Python! I understand that programming can seem
+                daunting at first, but I'm here to break it down into manageable
+                steps and make the learning process
+                <span class="marked">interactive and engaging</span>. I can
+                answer your questions in a clear and concise way, explain
+                complex concepts with easy-to-understand examples, and even
+                generate code snippets to help you visualize and practice.
+                <br />So, are you ready to dive in and
+                <span class="marked">discover the magic of Python</span> with
+                me?
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Learn and Enjoy!", "Download it now!"],
+        typeSpeed: 150,
+        backSpeed: 300,
+        looped: true,
+      });
+
+      const faders = document.querySelectorAll(".fade-in");
+
+      const appearOptions = {
+        // threshold: 1,
+        rootMargin: "0px 0px -200px 0px",
+      };
+      const appearOnScroll = new IntersectionObserver(function (
+        entries,
+        appearOnScroll
+      ) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          } else {
+            entry.target.classList.add("appear");
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions);
+
+      faders.forEach((fader) => {
+        appearOnScroll.observe(fader);
+      });
+    </script>
+  </body>
+</html>
