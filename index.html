@@ -6,56 +6,117 @@
     <title>PyZone</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="Images/icon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/3b2ea5359d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="container">
-      <header id="top">
+    <header id="top" class="parent">
+      <div class="container">
         <div>
           <img src="Images/Logo.png" alt="Logo" />
         </div>
-        <ul>
-          <a href="#top">Home</a>
-          <a href="#about-us">About Us</a>
-          <a href="#">Download</a>
-          <a href="#">Contact Us</a>
-        </ul>
-      </header>
-      <h2>Hi, I'm Ava! <br /><span class="auto-type"></span></h2>
-      <main>
-        <div id="about-us" class="fade-in">
-          <img src="Images/OIG1.jpg" alt="Ava's photo" class="fade-in" />
-          <div class="intro fade-in">
-            <div>
-              <h2>This is Ava!</h2>
-              <p>
-                Hello, everybody! my name is Ava as I mentioned before and I was
-                created to
-                <span class="marked"
-                  >help people who are interested in programming</span
-                >
-                - especially learning the fundamentals of programming in Python
-                - and I'm thrilled to be your guide on this exciting journey
-                into the world of Python! I understand that programming can seem
-                daunting at first, but I'm here to break it down into manageable
-                steps and make the learning process
-                <span class="marked">interactive and engaging</span>. I can
-                answer your questions in a clear and concise way, explain
-                complex concepts with easy-to-understand examples, and even
-                generate code snippets to help you visualize and practice.
-                <br />So, are you ready to dive in and
-                <span class="marked">discover the magic of Python</span> with
-                me?
-              </p>
-            </div>
+        <div class="links">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <a href="#top">Home</a>
+            <a href="#about-us">About us</a>
+            <a href="#download">Download</a>
+            <a href="mailto:menady20@gmail.com">Contact me</a>
+          </ul>
+        </div>
+      </div>
+      <h2>
+        <span class="letter-spacing">Hello</span>, <br /><span
+          class="auto-type"
+        ></span>
+      </h2>
+    </header>
+    <main>
+      <div id="about-us" class="fade-in">
+        <img src="Images/OIG1.jpg" alt="Ava's photo" class="fade-in" />
+        <div class="intro fade-in">
+          <div>
+            <h2>This is Ava!</h2>
+            <p>
+              Hello, everybody! my name is Ava as I mentioned before and I was
+              created to
+              <span class="marked"
+                >help people who are interested in programming</span
+              >
+              - especially learning the fundamentals of programming in Python -
+              and I'm thrilled to be your guide on this exciting journey into
+              the world of Python! I understand that programming can seem
+              daunting at first, but I'm here to break it down into manageable
+              steps and make the learning process
+              <span class="marked">interactive and engaging</span>. I can answer
+              your questions in a clear and concise way, explain complex
+              concepts with easy-to-understand examples, and even generate code
+              snippets to help you visualize and practice. <br />So, are you
+              ready to dive in and
+              <span class="marked">discover the magic of Python</span> with me?
+            </p>
           </div>
         </div>
-      </main>
-      <footer></footer>
-    </div>
+      </div>
+      <div id="download" class="fade-in">
+        <div class="free">
+          <h2>Free</h2>
+          <p class="price">
+            <i class="fa-solid fa-dollar-sign"></i>0<span>/mo</span>
+          </p>
+          <div class="pros">
+            <p><i class="fa-solid fa-circle-check"></i> 1 User</p>
+            <p><i class="fa-solid fa-circle-check"></i> Email support</p>
+            <p><i class="fa-solid fa-circle-check"></i> Limited Access</p>
+            <p><i class="fa-solid fa-circle-check"></i> Life is not pink</p>
+          </div>
+          <div class="purchase">Start for Free</div>
+        </div>
+        <div class="premium">
+          <h2>Premium</h2>
+          <p class="price">
+            <i class="fa-solid fa-dollar-sign"></i>15<span>/mo</span>
+          </p>
+          <div class="pros">
+            <p><i class="fa-solid fa-circle-check"></i> 10 User</p>
+            <p><i class="fa-solid fa-circle-check"></i> Email support</p>
+            <p><i class="fa-solid fa-circle-check"></i> Half Access</p>
+            <p><i class="fa-solid fa-circle-check"></i> 24/7 Support</p>
+            <p><i class="fa-solid fa-circle-check"></i> Premium Support</p>
+          </div>
+          <div class="purchase">Choose Plan</div>
+        </div>
+        <div class="pro-max">
+          <h2>Pro Max Ultra Plus</h2>
+          <p class="price">
+            <i class="fa-solid fa-dollar-sign"></i>2000<span>/mo</span>
+          </p>
+          <div class="pros">
+            <p><i class="fa-solid fa-circle-check"></i> Unlimited User</p>
+            <p><i class="fa-solid fa-circle-check"></i> Email support</p>
+            <p><i class="fa-solid fa-circle-check"></i> Half Access</p>
+            <p><i class="fa-solid fa-circle-check"></i> All Access</p>
+            <p><i class="fa-solid fa-circle-check"></i> 24/7 Support</p>
+            <p><i class="fa-solid fa-circle-check"></i> Pro Max Support</p>
+            <p><i class="fa-solid fa-circle-check"></i> Life is pink</p>
+          </div>
+          <div class="purchase">Choose Plan</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>2024 &copy; Made by 🤍 Mena Nady to 💜 Dr. Mona Zahran</p>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed(".auto-type", {
-        strings: ["Learn and Enjoy!", "Download it now!"],
+        strings: ["I'm Your Assistant!", "Let's Learn and Enjoy!"],
         typeSpeed: 150,
         backSpeed: 300,
         looped: true,
