@@ -3,149 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PyZone</title>
+    <title>
+      PyZone | Learn Python Fundamentals in a Fun and Interactive Way
+    </title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="Images/icon.ico" type="image/x-icon" />
-    <script
-      src="https://kit.fontawesome.com/3b2ea5359d.js"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header id="top" class="parent">
-      <div class="container">
-        <div>
-          <img src="Images/Logo.png" alt="Logo" />
+    <div class="container">
+      <div class="parent">
+        <div class="header">
+          <img src="Logo.png" alt="PyZone" />
+          <div class="buttons">
+            <input type="radio" name="tabsMenu" id="home0" checked />
+            <label for="home0">
+              <i class="fa-solid fa-house"></i>
+            </label>
+            <input type="radio" name="tabsMenu" id="profile" />
+            <label for="profile">
+              <i class="fa-solid fa-house"></i>
+            </label>
+            <input type="radio" name="tabsMenu" id="likes" />
+            <label for="likes">
+              <i class="fa-solid fa-house"></i>
+            </label>
+            <input type="radio" name="tabsMenu" id="settings" />
+            <label for="settings">
+              <i class="fa-solid fa-house"></i>
+            </label>
+            <input type="radio" name="tabsMenu" id="notifictaion" />
+            <label for="notifictaion">
+              <i class="fa-solid fa-house"></i>
+            </label>
+            <div class="underline"></div>
+          </div>
         </div>
-        <div class="links">
-          <span class="icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-          <ul>
-            <a href="#top">Home</a>
-            <a href="#about-us">About us</a>
-            <a href="#download">Download</a>
-            <a href="mailto:menady20@gmail.com">Contact me</a>
-          </ul>
+        <div class="body">
+          <div id="home">
+            <div class="text">
+              <h1>Welcome to PyZone</h1>
+              <p>Where you can <span class="typing"></span></p>
+            </div>
+          </div>
+          <div class="intro-to-pyzone"></div>
         </div>
       </div>
-      <h2>
-        <span class="letter-spacing">Hello</span>, <br /><span
-          class="auto-type"
-        ></span>
-      </h2>
-    </header>
-    <main>
-      <div id="about-us" class="fade-in">
-        <img src="Images/OIG1.jpg" alt="Ava's photo" class="fade-in" />
-        <div class="intro fade-in">
-          <div>
-            <h2>This is Ava!</h2>
-            <p>
-              Hello, everybody! my name is Ava as I mentioned before and I was
-              created to
-              <span class="marked"
-                >help people who are interested in programming</span
-              >
-              - especially learning the fundamentals of programming in Python -
-              and I'm thrilled to be your guide on this exciting journey into
-              the world of Python! I understand that programming can seem
-              daunting at first, but I'm here to break it down into manageable
-              steps and make the learning process
-              <span class="marked">interactive and engaging</span>. I can answer
-              your questions in a clear and concise way, explain complex
-              concepts with easy-to-understand examples, and even generate code
-              snippets to help you visualize and practice. <br />So, are you
-              ready to dive in and
-              <span class="marked">discover the magic of Python</span> with me?
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="download" class="fade-in">
-        <div class="free">
-          <h2>Free</h2>
-          <p class="price">
-            <i class="fa-solid fa-dollar-sign"></i>0<span>/mo</span>
-          </p>
-          <div class="pros">
-            <p><i class="fa-solid fa-circle-check"></i> 1 User</p>
-            <p><i class="fa-solid fa-circle-check"></i> Email support</p>
-            <p><i class="fa-solid fa-circle-check"></i> Limited Access</p>
-            <p><i class="fa-solid fa-circle-check"></i> Life is not pink</p>
-          </div>
-          <div class="purchase">Start for Free</div>
-        </div>
-        <div class="premium">
-          <h2>Premium</h2>
-          <p class="price">
-            <i class="fa-solid fa-dollar-sign"></i>15<span>/mo</span>
-          </p>
-          <div class="pros">
-            <p><i class="fa-solid fa-circle-check"></i> 10 User</p>
-            <p><i class="fa-solid fa-circle-check"></i> Email support</p>
-            <p><i class="fa-solid fa-circle-check"></i> Half Access</p>
-            <p><i class="fa-solid fa-circle-check"></i> 24/7 Support</p>
-            <p><i class="fa-solid fa-circle-check"></i> Premium Support</p>
-          </div>
-          <div class="purchase">Choose Plan</div>
-        </div>
-        <div class="pro-max">
-          <h2>Pro Max Ultra Plus</h2>
-          <p class="price">
-            <i class="fa-solid fa-dollar-sign"></i>2000<span>/mo</span>
-          </p>
-          <div class="pros">
-            <p><i class="fa-solid fa-circle-check"></i> Unlimited User</p>
-            <p><i class="fa-solid fa-circle-check"></i> Email support</p>
-            <p><i class="fa-solid fa-circle-check"></i> Half Access</p>
-            <p><i class="fa-solid fa-circle-check"></i> All Access</p>
-            <p><i class="fa-solid fa-circle-check"></i> 24/7 Support</p>
-            <p><i class="fa-solid fa-circle-check"></i> Pro Max Support</p>
-            <p><i class="fa-solid fa-circle-check"></i> Life is pink</p>
-          </div>
-          <div class="purchase">Choose Plan</div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <p>2024 &copy; Made by 🤍 Mena Nady to 💜 Dr. Mona Zahran</p>
-    </footer>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed(".auto-type", {
-        strings: ["I'm Your Assistant!", "Let's Learn and Enjoy!"],
-        typeSpeed: 150,
-        backSpeed: 300,
-        looped: true,
-      });
-
-      const faders = document.querySelectorAll(".fade-in");
-
-      const appearOptions = {
-        // threshold: 1,
-        rootMargin: "0px 0px -200px 0px",
-      };
-      const appearOnScroll = new IntersectionObserver(function (
-        entries,
-        appearOnScroll
-      ) {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            return;
-          } else {
-            entry.target.classList.add("appear");
-            appearOnScroll.unobserve(entry.target);
-          }
-        });
-      },
-      appearOptions);
-
-      faders.forEach((fader) => {
-        appearOnScroll.observe(fader);
-      });
-    </script>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
